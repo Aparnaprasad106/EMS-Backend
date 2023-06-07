@@ -96,7 +96,7 @@ exports.editUser = async(req,res)=>{
             fname,lname,email,mobile,gender,status,profile:file,location
 
         },{
-            new:true
+            new:true 
         }
         )
         // to save in this mongodb
