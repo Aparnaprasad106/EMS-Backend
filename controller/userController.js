@@ -19,7 +19,7 @@ exports.register = async(req,res)=>{
         // check existing employee
         const preuser = await users.findOne({email})
         if(preuser){
-            res.status(406).json('Employee Already Exist')
+            res.status(406).json('Employee Already Exist');
         }
         else{
             const newUser = new users({
@@ -67,6 +67,7 @@ exports.getusers = async(req,res)=>{
     }
 
  }
+ 
 
 //  deletetUser
 exports.deletetUser= async(req,res)=>{
